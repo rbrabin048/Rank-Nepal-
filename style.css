@@ -359,7 +359,7 @@ header > * {
     radial-gradient(circle at 100% 0%, rgba(20, 184, 166, 0.10), transparent 55%),
     var(--navy-950);
   border-bottom: none;
-  padding-block: var(--space-8) var(--space-4);
+  padding-block: var(--space-8) 0;
 }
 
 .hero > * {
