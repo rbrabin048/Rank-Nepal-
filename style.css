@@ -403,26 +403,20 @@ header > * {
   color: var(--teal-500);
   background: rgba(20, 184, 166, 0.08);
 }
-
 .hero-media {
   margin-top: var(--space-7);
   border-radius: var(--radius);
   border: 1px solid rgba(244, 247, 251, 0.16);
-  background:
-    repeating-linear-gradient(
-      to top right,
-      transparent 0,
-      transparent 18px,
-      rgba(20, 184, 166, 0.10) 18px,
-      rgba(20, 184, 166, 0.10) 19px
-    ),
-    linear-gradient(180deg, rgba(28, 93, 191, 0.18), rgba(10, 25, 48, 0.4));
+  overflow: hidden;
   aspect-ratio: 16 / 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: var(--space-5);
+}
+
+.hero-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius);
 }
 
 .image-placeholder-text {
